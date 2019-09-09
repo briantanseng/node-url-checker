@@ -41,6 +41,17 @@ Run in the background
 docker run --name url-checker -d briantanseng/node-url-checker:latest
 ```
 
+Run with ENV variables set
+```
+docker run --name url-checker \
+-e MINUTE=* \
+-e HOUR=* \
+-e DAY_OF_MONTH=* \
+-e MONTH=* \
+-e DAY_OF_WEEK=* \
+-it briantanseng/node-url-checker:latest
+```
+
 ### Perform Cleanup
 ```
 docker stop url-checker && docker rm url-checker
