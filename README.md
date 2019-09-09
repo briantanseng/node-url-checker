@@ -52,6 +52,13 @@ docker run --name url-checker \
 -it briantanseng/node-url-checker:latest
 ```
 
+Mount a Volume
+```
+docker run --name url-checker \
+-v ~/my-actual-data.txt:/app/data.txt \
+-it briantanseng/node-url-checker:latest
+```
+
 ### Perform Cleanup
 ```
 docker stop url-checker && docker rm url-checker

@@ -5,7 +5,7 @@ FROM node:10-alpine as node
 WORKDIR /app
 
 # Copy dependency definitions
-COPY package*.json /app
+COPY package*.json /app/
 
 # Install npm packages
 RUN npm install
@@ -16,6 +16,9 @@ COPY . /app
 # Declare environment variables with default values
 # Set to run every minute
 ENV MINUTE=* HOUR=* DAY_OF_MONTH=* MONTH=* DAY_OF_WEEK=*
+
+# Declare volume
+VOLUME ["/app/data"]
 
 # Run the app
 CMD node index.js
