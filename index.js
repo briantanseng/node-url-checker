@@ -18,7 +18,7 @@ cron.schedule(schedule, () => {
     console.log(`Running task on ${new Date().toUTCString()}`);
 
     let rl = readline.createInterface({
-        input: fs.createReadStream('data.txt')
+        input: fs.createReadStream('data/url-list.txt')
     });
 
     let line_no = 0;

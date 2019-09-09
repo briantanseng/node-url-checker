@@ -4,10 +4,11 @@
   "description": "Just a node-based, cron-style URL checker implemented using ES6.",
   "main": "index.js",
   "scripts": {
-    "run": "node index.js"
+    "start": "node index.js"
   },
   "keywords": [
-    "cron", "url checker"
+    "cron",
+    "url checker"
   ],
   "author": "Brian Tan Seng",
   "license": "MIT License",
